@@ -4,10 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static study.graph.GraphTraversal.bfs;
+import java.util.List;
 
-class GraphTraversalTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static study.graph.GraphSearch.bfs;
+
+class GraphSearchTest {
     private Graph graph;
 
     @BeforeEach
