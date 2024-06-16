@@ -1,0 +1,14 @@
+plugins {
+    id "me.champeau.jmh" version "0.7.2" // JMH 추가
+}
+
+dependencies {
+    jmh("org.openjdk.jmh:jmh-generator-annprocess:1.37")
+    jmhAnnotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:1.37")
+}
+
+jmh { // Default 테스트 수행값 정의
+    warmupIterations = 2
+    iterations = 5
+    fork = 1
+}

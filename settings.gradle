@@ -1,3 +1,4 @@
 rootProject.name = "Java-practice"
 
+include("concurrency")
 include("data-structure")
